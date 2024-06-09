@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  mysqldb:
+    container_name: spring-batch-exercise
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root123456'
+      MYSQL_DATABASE: 'spring_batch'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: '123456'
+    ports:
+      - 3306:3306
